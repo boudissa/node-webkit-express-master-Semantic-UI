@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    include tmp/nav
+    div(class="ui grid")
+      div(class="four wide column")
+        include tmp/sidenav
+      div(class="twelve wide stretched column")
+        .content
+          h4.ui.dividing.header #{title}
+          table.ui.very.basic.table
+            thead
+              tr
+                th Name
+                th Registration Date
+                th E-mail address
+                th Premium Plan
+            tbody
+              tr
+                td John Lilki
+                td September 14, 2013
+                td jhlilk22@yahoo.com
+                td No
+              tr
+                td Jamie Harington
+                td January 11, 2014
+                td jamieharingonton@yahoo.com
+                td Yes
+              tr
+                td Jill Lewis
+                td May 11, 2014
+                td jilsewris22@yahoo.com
+                td Yes
